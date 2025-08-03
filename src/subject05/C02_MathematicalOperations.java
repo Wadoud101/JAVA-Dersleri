@@ -25,7 +25,26 @@ public class C02_MathematicalOperations {
 
         System.out.println("Please Enter a 3 digit number: ");
         int num1 = in.nextInt();
-        System.out.println("Unit digit of the number is: " + (num1 % 10) + (num1 % 100) + (num1 % 10));
+        int unitDigitNum = 0;
+        int sumOfDigits = 0;
+
+        unitDigitNum = num1 % 10;
+        sumOfDigits = unitDigitNum;
+
+        num1 = num1 / 10;
+
+        unitDigitNum = num1 % 10;
+        sumOfDigits = sumOfDigits + unitDigitNum;
+
+        num1 = num1 / 10;
+
+        unitDigitNum = num1 % 10;
+        sumOfDigits = sumOfDigits + unitDigitNum;
+
+        System.out.println("The sum of digits are: "+ sumOfDigits);
+
+
+
 
 
     }
