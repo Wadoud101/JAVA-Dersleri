@@ -1,4 +1,4 @@
-package week02;
+package subject02;
 
 public class C01 {
 
