@@ -1,5 +1,7 @@
 package homework.week3;
 
+import java.util.Scanner;
+
 public class Question3 {
     public static void main(String[] args) {
 
@@ -18,5 +20,13 @@ public class Question3 {
     5 x 9 = 45
     5 x 10 = 50
     */
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Please Enter a number to find its product table: ");
+        int num = scan.nextInt();
+
+        for (int i = 1; i < 11; i++) {
+            System.out.println(num + " x " + i + " = " + num*i);
+
+        }
     }
 }

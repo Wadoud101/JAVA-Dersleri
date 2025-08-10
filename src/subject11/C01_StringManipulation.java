@@ -3,6 +3,8 @@ package subject11;
 public class C01_StringManipulation {
     public static void main(String[] args) {
 
+        // String Manipulation, charAt(), Length
+
         String str = "Java is Perfect";
 
         System.out.println("String to Upper Case: " + str.toUpperCase());
