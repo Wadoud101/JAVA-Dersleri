@@ -9,10 +9,6 @@ public class C05_StringReverse {
         System.out.print("Enter a text to write it in REVERSE: ");
         String text = scan.nextLine();
 
-        for (int i = text.length()-1; i >= 0 ; i--) {
-            System.out.print( text.charAt(i));
-
-        }
 
 
     }

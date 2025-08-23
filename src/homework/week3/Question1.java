@@ -24,8 +24,6 @@ public class Question1 {
             count = num%10;
             num /=10;
 
-
-
         }
 
 

@@ -10,6 +10,7 @@ public class C06_OverloadingLessCasting {
     public static void method1(float a, int b){
         System.out.println("Good");
     }
+
     public static void method1(double a, double b){
         System.out.println("Bad");
     }
