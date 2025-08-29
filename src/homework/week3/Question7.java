@@ -1,5 +1,7 @@
 package homework.week3;
 
+import java.util.Scanner;
+
 public class Question7 {
     public static void main(String[] args) {
 
@@ -25,5 +27,21 @@ public class Question7 {
     ugly number
 
     */
+        Scanner scan = new Scanner(System.in);
+        while (true) {
+            System.out.print("Give a number to check whether is ti UGLY number or not: " +
+                    "\nor enter 0 to exit! ");
+            int num = scan.nextInt();
+            if ( num == 0){
+                break;
+            }
+
+            if (num % 2 == 0 || num % 3 == 0 || num%5 == 0){
+                System.err.println(num + " is an UGLY number!!!");
+            } else System.err.println(num + " is NOT an ugly number!");
+
+
+        }
+
     }
 }

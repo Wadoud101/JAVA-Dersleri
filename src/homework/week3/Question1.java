@@ -17,20 +17,16 @@ public class Question1 {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a number to calculate the sum of its digits: ");
-        int num = scan.nextInt();
-        int count = 0;
 
-        for (int i = 0; i <num ; i++) {
-            count = num%10;
+        int num = scan.nextInt();
+        int sum = 0;
+
+        for (int i = num; i >= 1 ; i--) {
+
+            sum += num%10;
             num /=10;
 
         }
-
-
-        for (int i = 0; i < num; i++) {
-
-        }
-
+        System.out.println(sum);
     }
-
 }

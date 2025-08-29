@@ -1,5 +1,7 @@
 package homework.week3;
 
+import java.util.Scanner;
+
 public class Question6 {
     public static void main(String[] args) {
 
@@ -29,6 +31,19 @@ public class Question6 {
     Yanlis karakter girdiniz!
 
     */
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please Enter a letter: ");
+        String text1 = scan.nextLine();
+        String text = text1.toLowerCase();
+        char letter = text.charAt(0);
+
+        if (((letter >= 'A' && letter<= 'Z') || (letter >= 'a' && letter<= 'z')) && text.length() == 1){
+
+            if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
+                System.out.println(text1 + " harfi sesli harfdir.");
+            } else System.out.println(text1 +  " harfi sesli harf degildir.");
+
+        } else System.out.println("Please enter a letter!!!");
 
     }
 }
